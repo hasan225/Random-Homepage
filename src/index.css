@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .Section {
+    @apply pb-20 px-20 bg-gray-100 lg:px-10;
+  }
+  .flex-diverge {
+    @apply flex items-center justify-between;
+  }
+  .flex-middle {
+    @apply flex items-center justify-center;
+  }
+
+  .navbar {
+    @apply px-20 flex-diverge z-50 fixed duration-300 w-full lg:px-10;
+  }
+  .nav-items {
+    @apply flex gap-8 ml-20 lg:absolute lg:h-screen lg:w-2/4 lg:bg-gray-900 lg:top-0 lg:right-0 lg:z-40 lg:flex-middle lg:flex-col duration-500;
+  }
+  .heading {
+    @apply text-3xl text-center mb-10 font-semibold;
+  }
+  .heroImg {
+    @apply w-56 mt-16 h-72 object-cover rounded border-4 border-emerald-600 md:w-28 md:h-48;
+  }
+  .SubmitBtn {
+    @apply text-white hover:text-emerald-600 duration-300 bg-emerald-600 hover:bg-white hover:font-semibold rounded  py-2 px-6 capitalize
+  }
+  .Newslatter {
+    @apply absolute -top-28 left-2/4 transform -translate-x-2/4 bg-sky-900 text-white w-3/4 mx-auto rounded-lg px-16 py-9 md:px-6 sm:w-full
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
